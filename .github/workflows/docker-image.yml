@@ -90,9 +90,7 @@ jobs:
           context: ./api
           file: ./api/Dockerfile
           push: true
-          tags: |
-            bhhavika13/backend:latest
-            bhhavika13/backend:${{ env.IMAGE_TAG }}
+          tags: bhhavika13/backend:latest
 
   build_frontend_docker_image_and_push:
     runs-on: ubuntu-latest
@@ -119,6 +117,4 @@ jobs:
           context: ./client
           file: ./client/Dockerfile
           push: true
-          tags: |
-            bhhavika13/frontend:latest
-            bhhavika13/frontend:${{ env.IMAGE_TAG }}
+          tags: bhhavika13/frontend:latest
