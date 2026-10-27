@@ -139,7 +139,7 @@ jobs:
           severity: CRITICAL,HIGH
 
       - name: Run Trivy image scan for frontend
-        uses: aquasecurity/trivy-action@0.28.0
+        uses: aquasecurity/trivy-action@v0.28.0
         with:
           scan-type: image
           image-ref: bhhavika13/frontend:latest
